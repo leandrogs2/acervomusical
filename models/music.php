@@ -1,5 +1,7 @@
 <?php
 
+require_once ("database.php");
+
 class music extends dataBase {
 
     private $track;
@@ -52,8 +54,12 @@ class music extends dataBase {
         return $result;
     }
 
-    public function delete() {
+    public function delete($id) {
+        $this->fields = array("id");
+        $this->values = array($id);
+        $result = $this->deleteValues();
         
+        return $result;
     }
 
 }

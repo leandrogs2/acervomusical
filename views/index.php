@@ -31,7 +31,7 @@
                         <p>Menu administrativo</p>
                         <li><a href="?page=adduser.php">Cadastrar usuário</a></li>
                         <li><a href="?page=rmuser.php">Remover usuário</a></li>
-                        <li><a href="?page=addsong.php">Cadastrar música</a></li>
+                        <li><a href="?page=insertsong.php">Cadastrar música</a></li>
                         <li><a href="?page=editsong.php">Editar música</a></li>
                         <li><a href="?page=rmsong.php">Remover música</a></li>
                     </ul>
@@ -48,7 +48,12 @@
 
                 <!--CONTENT-->
                 <div id="content">
-                    <p>asd</p>
+                    <p><?php
+                            $page = $_GET['page'];
+                            if ($page) {
+                                include($page);
+                            }
+                            ?></p>
                 </div>
             </div>
         </div><!--END WRAP-->
