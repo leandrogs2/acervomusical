@@ -53,7 +53,6 @@ class music extends dataBase {
     }
     
     public function delete(){
-        //AQUI ESTÁ MINHA DÚVIDA
     }
 }
 ?>
