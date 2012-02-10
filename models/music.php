@@ -6,53 +6,56 @@ class music extends dataBase {
     private $alb_id;
     private $title;
     private $artist;
-    
+
     function __construct() {
         
     }
-    
-    public function setTrack($int){
+
+    public function setTrack($int) {
         $this->track = $int;
     }
-    
-    public function setAlb_id($int){
+
+    public function setAlb_id($int) {
         $this->alb_id = $int;
     }
-    
-    public function setTitle($string){
+
+    public function setTitle($string) {
         $this->title = $string;
     }
-    
-    public function setArtist($string){
+
+    public function setArtist($string) {
         $this->artist = $string;
     }
-    
-    public function getTrack(){
+
+    public function getTrack() {
         return $this->track;
     }
-    
-    public function getAlb_id(){
+
+    public function getAlb_id() {
         return $this->alb_id;
     }
-    
-    public function getTitle(){
+
+    public function getTitle() {
         return $this->title;
     }
-    
-    public function getArtist(){
+
+    public function getArtist() {
         return $this->artist;
     }
 
-    public function insert(){
+    public function insert() {
         $this->fields = array("track", "alb_id", "title", "artist");
-        $this->values = array($this->getTrack(), $this->getAlb_id(), 
+        $this->values = array($this->getTrack(), $this->getAlb_id(),
             $this->getTitle(), $this->getArtist());
         $result = $this->insertValues();
-        
+
         return $result;
     }
-    
-    public function delete(){
+
+    public function delete() {
+        
     }
+
 }
+
 ?>

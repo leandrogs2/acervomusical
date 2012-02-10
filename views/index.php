@@ -21,11 +21,11 @@
                 <!--MENU-->
                 <div id="menu">
                     <div id="shortcuts">
-                    <p class="home"><a href="?page=home.php">
-                            <img src="img/home.png" width="50px"></a></p>
-                    <p class="date">
-                        <?php echo date('H:i'); ?>h <?php echo date('d/m/Y'); ?>
-                    </p>
+                        <p class="home"><a href="?page=home.php">
+                                <img src="img/home.png" width="50px"></a></p>
+                        <p class="date">
+                            <?php echo date('H:i'); ?>h <?php echo date('d/m/Y'); ?>
+                        </p>
                     </div>
                     <ul>
                         <p>Menu administrativo</p>
