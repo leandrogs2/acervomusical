@@ -1,6 +1,6 @@
 <?php
 //mudança
-//desenvolvedor 2 fez cagada
+//mudança2
 require_once ("database.php");
 
 class music extends dataBase {
