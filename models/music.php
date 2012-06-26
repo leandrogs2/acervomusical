@@ -1,5 +1,6 @@
 <?php
 //mudança
+//desenvolvedor 2 fez cagada
 require_once ("database.php");
 
 class music extends dataBase {
